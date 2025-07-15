@@ -1,59 +1,72 @@
-# GifsApp
+# GIFs App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+A modern Angular application for browsing and searching GIFs. This project was created as part of an Angular course.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Browse trending GIFs
+- Search for GIFs by keywords
+- Responsive design with Tailwind CSS
+- Lazy-loaded modules for optimal performance
 
-```bash
-ng serve
+## Tech Stack
+
+- Angular 20.1.0
+- RxJS
+- Tailwind CSS 4.1.11
+- TypeScript 5.8.2
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── auth/           # Authentication components
+│   ├── gifs/           # Main GIF functionality
+│   │   ├── components/  # Reusable GIF components
+│   │   ├── interfaces/  # TypeScript interfaces
+│   │   ├── pages/       # Page components
+│   │   └── services/    # API and state services
+│   └── shared/         # Shared components across the app
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Installation
 
-## Code scaffolding
+1. Clone the repository
+   ```bash
+   git clone <repository-url>
+   cd gifs-app
+   ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2. Install dependencies
+   ```bash
+   npm install
+   ```
 
-```bash
-ng generate component component-name
-```
+3. Start the development server
+   ```bash
+   npm start
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+4. Navigate to `http://localhost:4200/`
 
-```bash
-ng generate --help
-```
+## Building for Production
 
-## Building
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-To build the project run:
+## Running Tests
 
-```bash
-ng build
-```
+Run `npm test` to execute the unit tests via Karma.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Contributing
 
-## Running unit tests
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## License
 
-```bash
-ng test
-```
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Running end-to-end tests
+## Acknowledgments
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- This project was created as part of an Angular course
+- GIFs are loaded through a third-party API
